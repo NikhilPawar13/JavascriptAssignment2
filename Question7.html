@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <style type="text/css"> 
+    body {margin: 30px;} 
+    #courses{
+        color: white;
+        background-color: black;
+    }
+    </style>  
+    <meta charset=utf-8 /> 
+    <title>Remove items from a dropdown list</title> 
+</head>
+<body>
+    <form> 
+    <select id="courses"> 
+        <option>Web Development</option> 
+        <option>Python</option> 
+        <option>Java Script</option> 
+        <option>Political science</option> 
+    </select> 
+    <input type="button" onclick="removecolor()" value="Select and Remove"> 
+    </form>
+
+    <script>
+        function removecolor(){
+            var x=document.getElementById("courses");
+            x.remove(x.selectedIndex);
+        }
+    </script>
+</body>
+</html>

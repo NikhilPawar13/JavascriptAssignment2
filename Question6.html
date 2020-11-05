@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Remove duplicate items from an array </title>
+</head>
+<body>
+    <script>
+        function removeDuplicates(num) {
+        let x;
+        const len=num.length;
+        const out=[];
+        const obj={};
+
+        for (x=0; x<len; x++) {
+            obj[num[x]]=0;
+        }
+        for (x in obj) {
+            out.push(x);
+        }
+        return out;
+        }
+        const Mynum = [1, 1, 2, 2, 4, 5, 4, 7, 3, 8, 7, 3, 6];
+        result = removeDuplicates(Mynum);
+        document.write("Program to remove Duplicate item from an Array <br></br>")
+        document.write("Original Array:- "+ Mynum +" <br></br>")
+        document.write("Modified Array:- "+ result )
+    </script>
+</body>
+</html>
